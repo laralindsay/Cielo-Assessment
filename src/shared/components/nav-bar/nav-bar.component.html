@@ -1,0 +1,21 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side" opened>
+    <p>Cielo Assessment</p>
+    <button mat-fab extended color="accent" class="options-sidenav">
+      <mat-icon class="material-symbols-outlined">monitoring</mat-icon>
+      Dashboard
+    </button>
+    <button mat-fab extended class="options-sidenav" >
+      <mat-icon class="material-symbols-outlined">receipt_long</mat-icon>
+      Transaçōes
+    </button>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <button  type="button" mat-icon-button (click)="drawer.toggle()" color="primary" class="show-navbar" >
+      <mat-icon class="material-symbols-outlined">sort</mat-icon> 
+    </button>
+    <app-dashboard></app-dashboard>
+    <app-transacoes></app-transacoes>
+  </div>
+</mat-drawer-container>

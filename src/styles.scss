@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+$sales-control-primary: mat.define-palette(mat.$grey-palette, 700);
+$sales-control-accent: mat.define-palette(mat.$indigo-palette, 700);
+
+$sales-control-warn: mat.define-palette(mat.$red-palette, 900);
+
+$sales-control-theme: mat.define-light-theme((color: (primary: $sales-control-primary,
+        accent: $sales-control-accent,
+        warn: $sales-control-warn,
+      )));
+
+
+@include mat.all-component-themes($sales-control-theme);
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: whitesmoke;
+}

@@ -1,0 +1,22 @@
+<div class="dashboard-container" >
+<mat-card class="dashboard-card">
+  <mat-card-header>
+    <mat-card-title>Dashboard</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="dashboard-list">
+    <div class="content-list">
+      <h4>{{ value | currency : "BRL" }}</h4>
+      <h6>Valor Líquido Total</h6>
+    </div>
+    <div class="content-list">
+      <h4>{{ value | currency : "BRL" }}</h4>
+      <h6>Valor Médio Total</h6>
+    </div>
+  </mat-card-content>
+  <mat-card-actions style="display: none">
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+</div>
