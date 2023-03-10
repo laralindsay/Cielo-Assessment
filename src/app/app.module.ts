@@ -41,7 +41,7 @@ import {MatInputModule} from '@angular/material/input';
     MatTableModule,
     MatInputModule,
     HttpClientModule
-  ],
+    ],
   exports: [
     MatIconModule
   ],

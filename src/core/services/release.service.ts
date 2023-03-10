@@ -12,5 +12,4 @@ export class ReleaseService {
   public getJSON(): Observable<any> {
     return this.http.get('assets/lancamento-conta-legado.json');
   }
-
 }

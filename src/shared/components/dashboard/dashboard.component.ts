@@ -9,15 +9,18 @@ import { ReleaseService } from 'src/core/services/release.service';
 export class DashboardComponent {
 
   constructor(
-    private appSettingsService : ReleaseService 
-) { }
+    private appSettingsService: ReleaseService
+  ) { }
 
-ngOnInit(){
-   this.appSettingsService.getJSON().subscribe(data => {
-        console.log(data);
+
+  valueTransactions: any
+
+  ngOnInit() {
+    this.appSettingsService.getJSON().subscribe(data => {
+      console.log(data);
+      this.valueTransactions = data;
     });
-}
+  }
 
 
-  value = "400"
 }

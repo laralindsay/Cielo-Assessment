@@ -5,25 +5,15 @@
   @media (max-width: 450px) {
     .dashboard-list {
 
-      display: flex;
-      justify-content: center;
-      gap: 5px;
-
-      h4 {
-        font-size: 20px;
-      }
-
-      h6 {
-        font-size: 15px;
-        line-height: 15px;
-      }
+      display: flex !important;
+      flex-direction: column;
     }
   }
 
   .dashboard-list {
     display: grid;
     gap: 15px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30% 30%;
     padding: 35px;
 
     .content-list {
