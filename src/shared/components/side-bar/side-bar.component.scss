@@ -1,0 +1,23 @@
+#sidebar-container {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff !important;
+  
+  
+    ul {
+      li {
+        line-height: 4rem;
+      }
+    }
+  }
+  
+  
+  @media (max-width: 450px) {
+    #sidebar-container {
+      display: none;
+    }
+  
+    #sidebar-container{
+      display: none;
+    }
+  }

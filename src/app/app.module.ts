@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import { NavBarComponent } from 'src/shared/components/nav-bar/nav-bar.component';
+import { HomeComponent } from 'src/shared/pages/home/home.component';
+import { SideBarComponent } from 'src/shared/components/side-bar/side-bar.component';
 import { DashboardComponent } from 'src/shared/components/dashboard/dashboard.component';
 import { TransacoesComponent } from 'src/shared/components/transacoes/transacoes.component';
 
@@ -23,9 +24,10 @@ import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     DashboardComponent,
-    TransacoesComponent
+    TransacoesComponent,
+    SideBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
