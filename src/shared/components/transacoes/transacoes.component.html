@@ -17,13 +17,13 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let post of valueTransactions.items">
-              <td>{{ post.id }}</td>
-              <td>{{ post.grossAmount | currency : "BRL" }}</td>
-              <td>{{ post.netAmount | currency : "BRL" }}</td>
-              <td>{{ post.channel }}</td>
-              <td>{{ post.date | date : "dd/MM/yy" }}</td>
-              <td>{{ post.status }}</td>
+            <tr *ngFor="let post of valueTransactions?.items">
+              <td>{{ post?.id }}</td>
+              <td>{{ post?.grossAmount | currency : "BRL" }}</td>
+              <td>{{ post?.netAmount | currency : "BRL" }}</td>
+              <td>{{ post?.channel }}</td>
+              <td>{{ post?.date | date : "dd/MM/yy" }}</td>
+              <td>{{ post?.status }}</td>
             </tr>
           </tbody>
         </table>
@@ -32,13 +32,13 @@
         <ul class="list-group list-group-flush">
           <li
             class="list-group-item"
-            *ngFor="let post of valueTransactions.items"
+            *ngFor="let post of valueTransactions?.items"
           >
-            <h5>{{ post.paymentType }}</h5>
+            <h5>{{ post?.paymentType }}</h5>
             <h6>
-              {{ post.date | date : "dd/MM/yy" }}
+              {{ post?.date | date : "dd/MM/yy" }}
             </h6>
-            {{ post.netAmount | currency : "BRL" }}
+            {{ post?.netAmount | currency : "BRL" }}
           </li>
         </ul>
       </div>

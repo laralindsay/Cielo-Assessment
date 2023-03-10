@@ -6,15 +6,15 @@
   </mat-card-header>
   <mat-card-content class="dashboard-list">
     <div class="content-list">
-      <h4>{{  valueTransactions.summary.totalNetAmount | currency : "BRL" }}</h4>
+      <h4>{{  valueTransactions?.summary?.totalNetAmount | currency : "BRL" }}</h4>
       <h6>Valor Líquido Total</h6>
     </div>
     <div class="content-list">
-      <h4>{{ valueTransactions.summary.totalAverageAmount | currency : "BRL" }}</h4>
+      <h4>{{ valueTransactions?.summary?.totalAverageAmount | currency : "BRL" }}</h4>
       <h6>Valor Médio Total</h6>
     </div>
     <div class="content-list">
-      <h4>{{  valueTransactions.summary.totalAmount | currency : "BRL" }}</h4>
+      <h4>{{  valueTransactions?.summary?.totalAmount | currency : "BRL" }}</h4>
       <h6>Valor Total</h6>
     </div>
   </mat-card-content>

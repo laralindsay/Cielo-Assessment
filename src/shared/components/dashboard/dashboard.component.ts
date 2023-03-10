@@ -17,7 +17,6 @@ export class DashboardComponent {
 
   ngOnInit() {
     this.appSettingsService.getJSON().subscribe(data => {
-      console.log(data);
       this.valueTransactions = data;
     });
   }

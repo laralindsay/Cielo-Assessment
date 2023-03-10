@@ -20,7 +20,6 @@ export class TransacoesComponent {
   ngOnInit() {
     this.appReleaseService.getJSON().subscribe(data => {
       this.valueTransactions = data
-      console.log(this.valueTransactions)
     });
   }
 

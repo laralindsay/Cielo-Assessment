@@ -1,7 +1,7 @@
 <mat-drawer-container class="container-sidenav" autosize>
   <mat-drawer #drawer class="sidenav" mode="side" opened>
     <p>Cielo Assessment</p>
-    <button mat-fab extended color="accent" class="options-sidenav" >
+    <button mat-fab extended color="accent" class="options-sidenav" (click)="scroll(transactions)">
       <mat-icon class="material-symbols-outlined">monitoring</mat-icon>
       Dashboard
     </button>
@@ -11,11 +11,21 @@
     </button>
   </mat-drawer>
 
-  <div class="sidenav-content" >
-    <button  type="button" mat-icon-button (click)="drawer.toggle()" color="primary" class="show-navbar" >
-      <mat-icon class="material-symbols-outlined">sort</mat-icon> 
+  <div class="sidenav-content">
+    <button
+      type="button"
+      mat-icon-button
+      (click)="drawer.toggle()"
+      color="primary"
+      class="show-navbar"
+    >
+      <mat-icon class="material-symbols-outlined">sort</mat-icon>
     </button>
-    <app-dashboard></app-dashboard>
-    <app-transacoes></app-transacoes>
+    <div #dashboard>
+      <app-dashboard></app-dashboard>
+    </div>
+    <div #transactions>
+      <app-transacoes></app-transacoes>
+    </div>
   </div>
 </mat-drawer-container>
