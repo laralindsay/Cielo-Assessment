@@ -2,13 +2,6 @@
   margin: 2rem 0 0 4rem;
 
 
-  @media (max-width: 450px) {
-    .dashboard-list {
-
-      display: flex !important;
-      flex-direction: column;
-    }
-  }
 
   .dashboard-list {
     display: grid;
@@ -21,4 +14,19 @@
       text-align: center;
     }
   }
+}
+
+
+@media (max-width: 450px) {
+
+  .dashboard-card{
+    margin: 10px 0;
+    .dashboard-list {
+
+      display: flex !important;
+      flex-direction: column;
+    }
+  }
+
+  
 }

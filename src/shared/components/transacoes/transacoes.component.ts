@@ -23,5 +23,10 @@ export class TransacoesComponent {
     });
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.valueTransactions.filter = filterValue.trim().toLowerCase();
+  }
+
 
 }
